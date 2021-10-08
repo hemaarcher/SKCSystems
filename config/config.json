@@ -1,0 +1,36 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "archer-systems-frm-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/archerSystemsFrmWp/ArcherSystemsFrmWpWebPart.js",
+          "manifest": "./src/webparts/archerSystemsFrmWp/ArcherSystemsFrmWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "archer-systems-tp-list-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/archerSystemsTpListWp/ArcherSystemsTpListWpWebPart.js",
+          "manifest": "./src/webparts/archerSystemsTpListWp/ArcherSystemsTpListWpWebPart.manifest.json"
+        }
+      ]
+    },
+    "archer-systems-dep-list-wp-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/archerSystemsDepListWp/ArcherSystemsDepListWpWebPart.js",
+          "manifest": "./src/webparts/archerSystemsDepListWp/ArcherSystemsDepListWpWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "ArcherSystemsFrmWpWebPartStrings": "lib/webparts/archerSystemsFrmWp/loc/{locale}.js",
+    "ArcherSystemsTpListWpWebPartStrings": "lib/webparts/archerSystemsTpListWp/loc/{locale}.js",
+    "ArcherSystemsDepListWpWebPartStrings": "lib/webparts/archerSystemsDepListWp/loc/{locale}.js"
+  }
+}
